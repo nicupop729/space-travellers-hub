@@ -1,0 +1,38 @@
+.Rocket {
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.Rocket__img {
+  width: 20rem;
+}
+
+.Rocket__name {
+  margin-bottom: 1rem;
+}
+
+.Rocket__description {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.Rocket__btn_Reserve {
+  padding: 1rem;
+  background-color: #017bfe;
+  border: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.Rocket__btn_Cancel {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
