@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Rockets from './components/Rockets';
-import Missions from './components/Missions';
-import Profile from './components/Profile';
+import Header from './components/header/Header';
+import Rockets from './components/rockets/Rockets';
+import Missions from './components/missions/Missions';
+import Profile from './components/profile/Profile';
 
 const App = () => (
   <div className="App">
