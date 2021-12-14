@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import './rocket.css';
 
 const Rocket = ({
-  flickr_images, rocket_name, description, reserved,
+  flickr_images,
+  rocket_name,
+  description,
+  reserved = false,
 }) => (
   <li className="Rocket">
     <img className="Rocket__img" src={flickr_images[0]} alt="rocket-img" />
@@ -34,7 +37,7 @@ Rocket.propTypes = {
 };
 
 Rocket.default = {
-  reserved: false,
+  reserved: true,
 };
 
 export default Rocket;
