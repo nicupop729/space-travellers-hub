@@ -1,18 +1,31 @@
+/* eslint-disable camelcase */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets } from '../../redux/rockets/rockets';
+import Rocket from './Rocket';
+import './rockets.css';
 
 const Rockets = () => {
-  // eslint-disable-next-line no-unused-vars
-  const rockets = useSelector((state) => state.rockets);
-  const dispach = useDispatch();
+  const dispatch = useDispatch();
+  const rockets = useSelector((state) => state.rocketsReducer);
   useEffect(() => {
-    dispach(getRockets());
-  }, []);
+    dispatch(getRockets());
+  }, [dispatch]);
 
-  console.log(rockets);
-
-  return <h1>Under Constructions - Rockets</h1>;
+  return (
+    <ul className="Rockets">
+      {rockets.map(({
+        flickr_images, rocket_name, description, id,
+      }) => (
+        <Rocket
+          key={id}
+          flickr_images={flickr_images}
+          rocket_name={rocket_name}
+          description={description}
+        />
+      ))}
+    </ul>
+  );
 };
 
 export default Rockets;

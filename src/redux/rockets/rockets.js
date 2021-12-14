@@ -1,22 +1,22 @@
 import fetchRockets from '../../apiServices/getRocketsApi';
 
-const ROCKET = 'rocket';
+const ROCKET = 'redux/actions/get_rockets';
 
-const rockets = (payload) => ({
+const rockets = (rockets) => ({
   type: ROCKET,
-  payload,
+  payload: rockets,
 });
 
 export const getRockets = () => (dispach) => {
   fetchRockets().then((rocket) => {
-    dispach(rockets(rocket.data));
+    dispach(rockets(rocket));
   });
 };
 
 const rocketsReducer = (state = [], action) => {
   switch (action.type) {
     case ROCKET:
-      return [...state, action.payload];
+      return action.payload;
     default:
       return state;
   }
