@@ -6,7 +6,7 @@ const Header = () => (
   <header className="Header">
     <div className="Header__div">
       <img src={logo} alt="logo" className="Header__div_logo" />
-      <h1 className="Header__div_title">Space Travelers&apos; Hub</h1>
+      <h1 className="Header__div_title">Space Travellers&apos; Hub</h1>
     </div>
     <nav className="Header__nav">
       <ul className="Header__nav_list">
