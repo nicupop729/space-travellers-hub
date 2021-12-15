@@ -36,3 +36,11 @@
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+.Rocket__reserved_badge {
+  color: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 5px;
+  background-color: #68c9ca;
+}
