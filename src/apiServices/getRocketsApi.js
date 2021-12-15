@@ -1,7 +1,9 @@
-const GET_ROCKETS_API = 'https://api.spacexdata.com/v3/rockets';
+import GET_DATA_API from './urlApi';
+
+const ROCKETS_END_POINT = 'rockets';
 
 const fetchRockets = async () => {
-  const data = await fetch(GET_ROCKETS_API);
+  const data = await fetch(`${GET_DATA_API}${ROCKETS_END_POINT}`);
   const dataResult = await data.json();
   return dataResult;
 };
