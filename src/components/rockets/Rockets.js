@@ -1,27 +1,33 @@
-/* eslint-disable camelcase */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets } from '../../redux/rockets/rockets';
 import Rocket from './Rocket';
 import './rockets.css';
 
+let loadFirstTime = false;
+
 const Rockets = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rocketsReducer);
   useEffect(() => {
-    dispatch(getRockets());
+    if (!loadFirstTime) {
+      dispatch(getRockets());
+      loadFirstTime = true;
+    }
   }, [dispatch]);
 
   return (
     <ul className="Rockets">
       {rockets.map(({
-        flickr_images, rocket_name, description, id,
+        image, name, description, id, reserved,
       }) => (
         <Rocket
+          id={id}
           key={id}
-          flickr_images={flickr_images}
-          rocket_name={rocket_name}
+          image={image}
+          name={name}
           description={description}
+          reserved={reserved}
         />
       ))}
     </ul>
