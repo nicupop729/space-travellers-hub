@@ -35,44 +35,46 @@ const Missions = () => {
             </th>
           </tr>
         </thead>
-        {missions.map(({
-          id, name, description, reserved,
-        }) => (
-          <tr key={id}>
-            <td className="Missions__name">
-              <h1>{name}</h1>
-            </td>
-            <td className="Missions__description">
-              <p>{description}</p>
-            </td>
-            <td>
-              {reserved ? (
-                <span className="badge badge--primary">ACTIVE MEMBER</span>
-              ) : (
-                <span className="badge badge--secondary">NOT A MEMBER</span>
-              )}
-            </td>
-            <td>
-              {reserved ? (
-                <button
-                  type="button"
-                  onClick={() => dispatch(joinMissionAction(id))}
-                  className="app-btn-danger"
-                >
-                  Leave Mission
-                </button>
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => dispatch(joinMissionAction(id))}
-                  className="app-btn-ghost"
-                >
-                  Join Mission
-                </button>
-              )}
-            </td>
-          </tr>
-        ))}
+        <tbody>
+          {missions.map(({
+            id, name, description, reserved,
+          }) => (
+            <tr key={id}>
+              <td className="Missions__name">
+                <h1>{name}</h1>
+              </td>
+              <td className="Missions__description">
+                <p>{description}</p>
+              </td>
+              <td>
+                {reserved ? (
+                  <span className="badge badge--primary">ACTIVE MEMBER</span>
+                ) : (
+                  <span className="badge badge--secondary">NOT A MEMBER</span>
+                )}
+              </td>
+              <td>
+                {reserved ? (
+                  <button
+                    type="button"
+                    onClick={() => dispatch(joinMissionAction(id))}
+                    className="app-btn-danger"
+                  >
+                    Leave Mission
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => dispatch(joinMissionAction(id))}
+                    className="app-btn-ghost"
+                  >
+                    Join Mission
+                  </button>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );

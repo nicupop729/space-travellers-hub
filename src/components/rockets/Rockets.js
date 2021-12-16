@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets } from '../../redux/rockets/rockets';
+import Profile from '../profile/Profile';
 import Rocket from './Rocket';
 import './rockets.css';
 
@@ -15,6 +16,8 @@ const Rockets = () => {
       loadFirstTime = true;
     }
   }, [dispatch]);
+
+  Profile();
 
   return (
     <ul className="Rockets">

@@ -35,7 +35,6 @@
 .Missions__name {
   display: flex;
   align-items: flex-start;
-  width: 10%;
 }
 
 .Missions__description {
