@@ -9,10 +9,10 @@ const Rocket = ({
     <img className="Rocket__img" src={image} alt="rocket-img" />
     <div className="Rocket__div">
       <h1 className="Rocket__name">{name}</h1>
-      <p className="Rocket__description">
+      <div className="Rocket__badge_desc_div">
         {reserved && <span className="Rocket__reserved_badge">Reserved</span>}
-        {description}
-      </p>
+        <p className="Rocket__description">{description}</p>
+      </div>
       {reserved ? (
         <RocketBtn
           className="Rocket__btn_Cancel"
