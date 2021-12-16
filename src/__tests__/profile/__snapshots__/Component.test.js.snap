@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for Component component 1`] = `
+<div
+  className="Reservations__div"
+>
+  <h1>
+    My
+  </h1>
+  <ul
+    className="Reservations__div_list"
+  >
+    <li
+      className="Reservations__div_list_item"
+    >
+      <h2
+        className="Reservations__div_list_item_name"
+      >
+         
+        -
+         
+         
+        -
+         
+        -
+         
+      </h2>
+      <button
+        className="Rocket__btn_Cancel"
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel Reservation
+      </button>
+    </li>
+    <li
+      className="Reservations__div_list_item"
+    >
+      <h2
+        className="Reservations__div_list_item_name"
+      >
+         
+        -
+         
+         
+        -
+         
+        -
+         
+      </h2>
+      <button
+        className="Rocket__btn_Cancel"
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel Reservation
+      </button>
+    </li>
+  </ul>
+</div>
+`;

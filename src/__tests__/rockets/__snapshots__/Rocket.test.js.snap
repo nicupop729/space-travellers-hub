@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for Rocket component 1`] = `
+<li
+  className="Rocket"
+>
+  <img
+    alt="rocket-img"
+    className="Rocket__img"
+  />
+  <div
+    className="Rocket__div"
+  >
+    <h1
+      className="Rocket__name"
+    />
+    <div
+      className="Rocket__badge_desc_div"
+    >
+      <p
+        className="Rocket__description"
+      />
+    </div>
+    <button
+      className="Rocket__btn_Reserve"
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</li>
+`;
