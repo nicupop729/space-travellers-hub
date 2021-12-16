@@ -1,11 +1,7 @@
-import GET_DATA_API from './urlApi';
+import fetchDataApi from './funcApi';
 
 const MISSIONS_END_POINT = 'missions';
 
-const fetchMissions = async () => {
-  const data = await fetch(`${GET_DATA_API}${MISSIONS_END_POINT}`);
-  const dataResult = await data.json();
-  return dataResult;
-};
+const fetchMissions = () => fetchDataApi(MISSIONS_END_POINT);
 
 export default fetchMissions;
