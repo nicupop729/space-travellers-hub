@@ -20,6 +20,7 @@ export const getRockets = () => (dispach) => {
       name: rocket.rocket_name,
       description: rocket.description,
       image: rocket.flickr_images[0],
+      urlWiki: rocket.wikipedia,
       reserved: false,
     }));
     dispach(getRocketsAction(rockets));
