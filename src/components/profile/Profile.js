@@ -12,8 +12,18 @@ const Profile = () => {
 
   return (
     <div className="Reservations">
-      <Component reservations={activeMissions} object="Missions" />
-      <Component reservations={activeRockets} object="Rockets" />
+      <Component
+        reservations={activeMissions}
+        object="Missions"
+        message="No missions joined"
+        type="mission"
+      />
+      <Component
+        reservations={activeRockets}
+        object="Rockets"
+        message="No rockets reserved"
+        type="rocket"
+      />
     </div>
   );
 };

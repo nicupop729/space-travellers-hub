@@ -1,43 +1,34 @@
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { reserveRocketAction } from '../../redux/rockets/rockets';
+import RocketBtn from '../Btns/RocketBtn';
 import './rocket.css';
 
 const Rocket = ({
   image, name, description, reserved, id,
-}) => {
-  const dispatch = useDispatch();
-
-  return (
-    <li className="Rocket">
-      <img className="Rocket__img" src={image} alt="rocket-img" />
-      <div className="Rocket__div">
-        <h1 className="Rocket__name">{name}</h1>
-        <p className="Rocket__description">
-          {reserved && <span className="Rocket__reserved_badge">Reserved</span>}
-          {description}
-        </p>
-        {reserved ? (
-          <button
-            type="button"
-            onClick={() => dispatch(reserveRocketAction(id))}
-            className="Rocket__btn_Cancel"
-          >
-            Cancel Reservation
-          </button>
-        ) : (
-          <button
-            type="button"
-            onClick={() => dispatch(reserveRocketAction(id))}
-            className="Rocket__btn_Reserve"
-          >
-            Reserve Rocket
-          </button>
-        )}
-      </div>
-    </li>
-  );
-};
+}) => (
+  <li className="Rocket">
+    <img className="Rocket__img" src={image} alt="rocket-img" />
+    <div className="Rocket__div">
+      <h1 className="Rocket__name">{name}</h1>
+      <p className="Rocket__description">
+        {reserved && <span className="Rocket__reserved_badge">Reserved</span>}
+        {description}
+      </p>
+      {reserved ? (
+        <RocketBtn
+          className="Rocket__btn_Cancel"
+          text="Cancel Reservation"
+          id={id}
+        />
+      ) : (
+        <RocketBtn
+          className="Rocket__btn_Reserve"
+          text="Reserve Rocket"
+          id={id}
+        />
+      )}
+    </div>
+  </li>
+);
 
 Rocket.propTypes = {
   name: PropTypes.string.isRequired,

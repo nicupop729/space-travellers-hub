@@ -19,6 +19,8 @@ export const getMissions = () => (dispach) => {
       id: mission.mission_id,
       name: mission.mission_name,
       description: mission.description,
+      urlWiki: mission.wikipedia,
+      urlOwn: mission.website,
       reserved: false,
     }));
     dispach(getMissionsAction(missions));
