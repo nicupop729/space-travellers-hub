@@ -1,0 +1,87 @@
+.Missions {
+  padding: 3rem 3rem;
+}
+
+.Missions__table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.Missions__table thead {
+  border-bottom: 1px solid #ccc;
+  height: 30px;
+}
+
+.Missions__table td,
+.Missions__table th {
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.Missions__table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.Missions__table tr:hover {
+  background-color: #ddd;
+}
+
+.Missions th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+.Missions__name {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Missions__description {
+  width: 60%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.app-btn-primary {
+  background-color: #46769e;
+  color: #fff;
+}
+
+.app-btn-ghost {
+  background-color: #fff;
+  color: #46769e;
+  border: 1px solid #46769e;
+}
+
+.app-btn-danger {
+  background-color: #fff;
+  color: #9e2f2f;
+  border: 1px solid #9e2f2f;
+}
+
+.badge {
+  color: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 1px 5px;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background-color: #68c9ca;
+}
+
+.badge--secondary {
+  background-color: #808080;
+  color: #fff;
+}

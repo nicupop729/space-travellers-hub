@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/header/Header';
+import Rockets from './components/rockets/Rockets';
+import Missions from './components/missions/Missions';
+import Profile from './components/profile/Profile';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Header />
+    <main className="hero">
+      <Routes>
+        <Route exact path="/" element={<Rockets />} />
+        <Route exact path="/missions" element={<Missions />} />
+        <Route exact path="/profile" element={<Profile />} />
+      </Routes>
+    </main>
+  </div>
+);
 
 export default App;

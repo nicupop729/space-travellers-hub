@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for MissionBtn component 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
+/>
+`;
+
+exports[`snapshot testing snapshot for RocketBtn component 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
+/>
+`;

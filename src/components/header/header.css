@@ -1,0 +1,43 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.Header__div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Header__div_logo {
+  height: 5rem;
+}
+
+.Header__div_title {
+  font-size: 2.5rem;
+}
+
+.Header__nav_list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #017bfe;
+  font-size: 1.7rem;
+}
+
+.active {
+  text-decoration: underline;
+  color: #0058b6;
+}
+
+.Header__nav_list_bar {
+  height: 2rem;
+  border-left: 2px solid #000;
+}
