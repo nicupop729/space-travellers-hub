@@ -1,7 +1,7 @@
-/* eslint-disable camelcase */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions, joinMissionAction } from '../../redux/missions/missions';
+import { getMissions } from '../../redux/missions/missions';
+import MissionBtn from '../Btns/MissionBtn';
 import './missions.css';
 
 let loadOance = false;
@@ -55,21 +55,9 @@ const Missions = () => {
               </td>
               <td>
                 {reserved ? (
-                  <button
-                    type="button"
-                    onClick={() => dispatch(joinMissionAction(id))}
-                    className="app-btn-danger"
-                  >
-                    Leave Mission
-                  </button>
+                  <MissionBtn className="app-btn-danger" id={id} text="Leave Mission" />
                 ) : (
-                  <button
-                    type="button"
-                    onClick={() => dispatch(joinMissionAction(id))}
-                    className="app-btn-ghost"
-                  >
-                    Join Mission
-                  </button>
+                  <MissionBtn className="app-btn-ghost" id={id} text="Join Mission" />
                 )}
               </td>
             </tr>
