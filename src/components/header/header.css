@@ -34,6 +34,7 @@ a {
 
 .active {
   text-decoration: underline;
+  color: #0058b6;
 }
 
 .Header__nav_list_bar {

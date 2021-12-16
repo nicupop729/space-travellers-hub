@@ -1,0 +1,24 @@
+.Reservations__div {
+  width: 50%;
+}
+
+.Reservations__div_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.Reservations__div_list_item {
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.Reservations__div_none {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
