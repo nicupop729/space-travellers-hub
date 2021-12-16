@@ -39,9 +39,12 @@
 
 .Rocket__reserved_badge {
   color: #fff;
-  display: inline-block;
+  display: block;
+  position: relative;
   border-radius: 3px;
-  padding: 0 5px;
+  padding: 2px 5px;
+  margin-top: 2px;
   background-color: #68c9ca;
   margin-right: 1rem;
+  float: left;
 }
