@@ -50,6 +50,7 @@ button {
   border: none;
   font-size: 1.2rem;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .app-btn-primary {
