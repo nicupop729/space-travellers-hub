@@ -8,7 +8,7 @@
 ![screenshot](./src/assets/travellers-hub-missions.png)
 ![screenshot](./src/assets/travellers-hub-profile.png)
 
-It was build for a company that provides commercial and scientific space travel services.<br />The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking.<br />The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
+The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking.<br />The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 
 ## Built With
 
