@@ -1,11 +1,7 @@
-import GET_DATA_API from './urlApi';
+import fetchDataApi from './funcApi';
 
 const ROCKETS_END_POINT = 'rockets';
 
-const fetchRockets = async () => {
-  const data = await fetch(`${GET_DATA_API}${ROCKETS_END_POINT}`);
-  const dataResult = await data.json();
-  return dataResult;
-};
+const fetchRockets = () => fetchDataApi(ROCKETS_END_POINT);
 
 export default fetchRockets;
