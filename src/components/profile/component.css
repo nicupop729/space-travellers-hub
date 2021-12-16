@@ -12,10 +12,15 @@
 }
 
 .Reservations__div_list_item {
-  font-size: 1.5rem;
   padding: 1rem 0.5rem;
   width: 100%;
   border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Reservations__div_list_item_name {
+  font-size: 1.5rem;
 }
 
 .Reservations__div_none {
